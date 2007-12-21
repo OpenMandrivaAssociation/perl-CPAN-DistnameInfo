@@ -15,6 +15,7 @@ Source:     http://www.cpan.org/modules/by-module/CPAN/%{module}-%{version}.tar.
 BuildRequires:  perl-devel
 %endif
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Many online services that are centered around CPAN attempt to associate
