@@ -1,5 +1,5 @@
 %define upstream_name    CPAN-DistnameInfo
-%define upstream_version 0.09
+%define upstream_version 0.10
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
