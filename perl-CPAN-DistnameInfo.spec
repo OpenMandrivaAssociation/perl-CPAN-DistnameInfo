@@ -2,14 +2,14 @@
 %define upstream_version 0.12
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Extract distribution name and version from a distribution filename
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CPAN/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/gbarr/CPAN-DistnameInfo
+Source0:	https://cpan.metacpan.org/authors/id/G/GB/GBARR/CPAN-DistnameInfo-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
