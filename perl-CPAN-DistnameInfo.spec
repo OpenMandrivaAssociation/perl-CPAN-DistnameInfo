@@ -1,15 +1,13 @@
 %define upstream_name    CPAN-DistnameInfo
-%define upstream_version 0.12
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.12
+Release:	6
 
 Summary:	Extract distribution name and version from a distribution filename
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/gbarr/CPAN-DistnameInfo
-Source0:	https://cpan.metacpan.org/authors/id/G/GB/GBARR/CPAN-DistnameInfo-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/G/GB/GBARR/CPAN-DistnameInfo-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +26,7 @@ filenames and also report if the version is to be treated as a developer
 release.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -64,9 +62,7 @@ make test
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.80.0-1mdv2010.0
 + Revision: 403027
-- rebuild using %%perl_convert_version
-
-* Thu May 07 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.08-1mdv2010.0
+- rebuild using %0.12 Thu May 07 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.08-1mdv2010.0
 + Revision: 372882
 - update to new version 0.08
 
